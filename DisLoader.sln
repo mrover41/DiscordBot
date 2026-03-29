@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisLoader", "DisLoader\DisLoader.csproj", "{B8FDCE22-4733-421F-810C-E2F0A5E75F28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisCore", "DisCore\DisCore.csproj", "{59D8CDC1-3C27-4325-9DB3-E7A5852D03D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8FDCE22-4733-421F-810C-E2F0A5E75F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FDCE22-4733-421F-810C-E2F0A5E75F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FDCE22-4733-421F-810C-E2F0A5E75F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FDCE22-4733-421F-810C-E2F0A5E75F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D8CDC1-3C27-4325-9DB3-E7A5852D03D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D8CDC1-3C27-4325-9DB3-E7A5852D03D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D8CDC1-3C27-4325-9DB3-E7A5852D03D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D8CDC1-3C27-4325-9DB3-E7A5852D03D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
