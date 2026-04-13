@@ -1,6 +1,8 @@
+using DisCore.Features.CommandSystem.BaseClass.Managers;
 using DisCore.Features.ModuleSystem.Attributies;
 using DisCore.Features.ModuleSystem.BaseClass;
 using DSharpPlus;
+using DSharpPlus.Entities;
 using DSharpPlus.EventArgs;
 
 namespace DisCore.Features.CommandSystem.Modules;
@@ -13,8 +15,10 @@ public class CommandParser : ModuleBase {
     }
 
     private async Task CreatedMessage(DiscordClient client, MessageCreatedEventArgs ev) {
-        if (ev.Message.Content == "!ping")
-            await ev.Channel.SendMessageAsync("Pong!");
+        string input = ev.Message.Content;
+        string[] parts = input.Split(' ', 2);
+        if (ev.Message.Content.First() == '!')
+            CommandManager.ExecuteCommand((DiscordMember)ev.Author, parts[0].Substring(1), parts[1]);
     }
     
     public override void OnDisable() {
