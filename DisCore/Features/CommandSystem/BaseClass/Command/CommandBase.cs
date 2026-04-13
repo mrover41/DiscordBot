@@ -7,6 +7,10 @@ namespace DisCore.Features.CommandSystem.BaseClass.Command;
 
 public abstract class CommandBase {
     protected static List<DiscordMember> Members = new();
+
+    public CommandBase(CommandConfig config) {
+        Config = config;
+    }
     
     public readonly CommandConfig Config;
     public readonly List<AccessConditionBase> AccessConditions = new();

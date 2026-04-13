@@ -13,13 +13,22 @@ public class CommandParser : ModuleBase {
         Program.builder.ConfigureEventHandlers(x => x.HandleMessageCreated(CreatedMessage));
         base.OnEnable();
     }
-
-    //Надо доработать, обязательно (добавить async и зашиту от отсуцтвия аргументов)
+    
     private async Task CreatedMessage(DiscordClient client, MessageCreatedEventArgs ev) {
+        Console.WriteLine($"[INFO] {ev.Message}");
+        
         string input = ev.Message.Content;
+        
+        if (input[0] != '!') return;
+        
         string[] parts = input.Split(' ', 2);
+        string[] args = new string[parts.Length - 1];
+        
+        if (parts[1] != null) args = parts[1].Split(' ', StringSplitOptions.RemoveEmptyEntries);
         if (ev.Message.Content.First() == '!')
-            CommandManager.ExecuteCommand((DiscordMember)ev.Author, parts[0].Substring(1), parts[1].Split(' ', StringSplitOptions.RemoveEmptyEntries));
+            CommandManager.ExecuteCommand((DiscordMember)ev.Author, parts[0].Substring(1), args);
+        
+        Console.WriteLine("[DISCORE] Command: " + input);
     }
     
     public override void OnDisable() {

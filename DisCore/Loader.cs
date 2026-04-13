@@ -11,7 +11,7 @@ public class Loader : ServerModule {
 
     public override void OnLoad() {
         ModuleManager.RegisterModules(Assembly.GetExecutingAssembly());
-        CommandManager.RegisterAllCommands(Assembly.GetExecutingAssembly());
+        //CommandManager.RegisterAllCommands(Assembly.GetExecutingAssembly());
         base.OnLoad();
     }
 

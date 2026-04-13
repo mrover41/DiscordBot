@@ -46,7 +46,7 @@ public class Program {
 			                  $"Version: {instance.Version}\n" +
 			                  $"Name: {instance.Name}\n" +
 			                  $"Description: {instance.Description}");*/
-			instance.OnLoad();
+			//instance.OnLoad();
 			
 			Console.WriteLine("[INFO] Registered " + dllFile);
 		}
@@ -55,9 +55,9 @@ public class Program {
 
 		builder = DiscordClientBuilder.CreateDefault("36e8eb363a16e4f26e6fd4f89b32869409028510f3cee942ddcc6a480572d05a", DiscordIntents.AllUnprivileged | DiscordIntents.MessageContents);
 		
-		ModuleManager.LoadModules();
-
 		DiscordClient = builder.Build();
+
+		ModuleManager.LoadModules();
 		
 		Console.WriteLine("Press any key to exit...");
 		Console.ReadKey();

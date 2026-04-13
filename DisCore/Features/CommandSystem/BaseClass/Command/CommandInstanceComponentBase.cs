@@ -8,7 +8,7 @@ public abstract class CommandInstanceComponentBase {
 
     public readonly DiscordMember Member;
 
-    CommandInstanceComponentBase(CommandBase command, DiscordMember member) {
+    public CommandInstanceComponentBase(CommandBase command, DiscordMember member) {
         Command = command;
         Member = member;
     }

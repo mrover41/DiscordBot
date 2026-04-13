@@ -11,8 +11,4 @@
       <ProjectReference Include="..\DisLoader\DisLoader.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Modules\" />
-    </ItemGroup>
-
 </Project>
