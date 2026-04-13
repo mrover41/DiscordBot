@@ -18,7 +18,7 @@ public class CommandParser : ModuleBase {
         string input = ev.Message.Content;
         string[] parts = input.Split(' ', 2);
         if (ev.Message.Content.First() == '!')
-            CommandManager.ExecuteCommand((DiscordMember)ev.Author, parts[0].Substring(1), parts[1]);
+            CommandManager.ExecuteCommand((DiscordMember)ev.Author, parts[0].Substring(1), parts[1].Split(' ', StringSplitOptions.RemoveEmptyEntries));
     }
     
     public override void OnDisable() {
