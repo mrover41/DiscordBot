@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisLoader", "DisLoader\DisL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisCore", "DisCore\DisCore.csproj", "{59D8CDC1-3C27-4325-9DB3-E7A5852D03D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands", "Commands\Commands.csproj", "{874ACD16-E0F1-4925-B8BF-98F09902705C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{59D8CDC1-3C27-4325-9DB3-E7A5852D03D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59D8CDC1-3C27-4325-9DB3-E7A5852D03D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59D8CDC1-3C27-4325-9DB3-E7A5852D03D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874ACD16-E0F1-4925-B8BF-98F09902705C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874ACD16-E0F1-4925-B8BF-98F09902705C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874ACD16-E0F1-4925-B8BF-98F09902705C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874ACD16-E0F1-4925-B8BF-98F09902705C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

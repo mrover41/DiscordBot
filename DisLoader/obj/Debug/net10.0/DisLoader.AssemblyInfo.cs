@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DisLoader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+531b454477a7a70bc95f949db47b75c34192da1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DisLoader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DisLoader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -35,3 +35,4 @@
 /home/Mr_Over41/RiderProjects/DisLoader/DisLoader/bin/Debug/net10.0/Ulid.dll
 /home/Mr_Over41/RiderProjects/DisLoader/DisLoader/obj/Debug/net10.0/DisLoader.csproj.AssemblyReference.cache
 /home/Mr_Over41/RiderProjects/DisLoader/DisLoader/obj/Debug/net10.0/DisLoader.csproj.Up2Date
+/home/Mr_Over41/RiderProjects/DisLoader/DisLoader/obj/Debug/net10.0/DisLoader.sourcelink.json
