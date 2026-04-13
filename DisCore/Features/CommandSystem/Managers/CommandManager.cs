@@ -1,7 +1,6 @@
 using System.Reflection;
 using DisCore.Features.CommandSystem.Attributies;
 using DisCore.Features.CommandSystem.BaseClass.Command;
-using DisCore.Features.ModuleSystem.Attributies;
 using DSharpPlus.Entities;
 
 namespace DisCore.Features.CommandSystem.BaseClass.Managers;
@@ -35,7 +34,7 @@ public static class CommandManager {
         CommandInstances.Add(member, instanceComponent);
     }
     
-    public static void EndCommand(DiscordMember member) {
+    public static void EndCommand(this DiscordMember member) {
         for (;;) {
             CommandInstanceComponentBase commandInstance = CommandInstances.TryGetValue(member, out var com) ? com : null;
             
@@ -46,5 +45,9 @@ public static class CommandManager {
             
             CommandInstances.Remove(member);
         }
+    }
+
+    public static CommandInstanceComponentBase GetCommandInstance(this DiscordMember member) {
+        return CommandInstances.TryGetValue(member, out var com) ? com : null;
     }
 }
