@@ -14,6 +14,7 @@ public class CommandParser : ModuleBase {
         base.OnEnable();
     }
 
+    //Надо доработать, обязательно (добавить async и зашиту от отсуцтвия аргументов)
     private async Task CreatedMessage(DiscordClient client, MessageCreatedEventArgs ev) {
         string input = ev.Message.Content;
         string[] parts = input.Split(' ', 2);
